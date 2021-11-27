@@ -1,0 +1,70 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Live do Zero</title>
+</head>
+
+<body>
+    <main>
+        <div class="logo">
+            <a href="index.html"><img src="assets/css/img/logo_transparent.png" alt=""></a>
+        </div>
+        <div class="box-login">
+            <div class="box-login-content">
+                <a style="padding: 0;" href="index.html"><img src="assets/css/img/logo_transparent.png" alt=""></a>
+                <h1>Login</h1>
+                <form action="index.html">
+                    <input type="email" name="email" autocomplete="off" placeholder="Insira seu e-mail" required>
+                    <input type="password" name="senha" placeholder="Insira sua senha">
+                    <input type="submit" value="Entrar">
+                    <input type="button" onclick="location.href = 'cadastro.html'" value="Cadastre-se">
+                    <div class="box-login-esqueci-senha">
+                        <a href="#"> <span>Esqueci a senha</span> </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <ul>
+                <a class="link-footer" href="#">
+                    <li id="myBtn1">Termos de Uso</li>
+                </a>
+                <div id="myModal1" class="modal">
+                    <div class="modal-content ">
+                        <button class="close">&times;</button>
+                        <p>Seja bem-vindo ao Plataforma TV1!
+                            Estes termos e condições descrevem as regras de uso do site da empresa TV1, localizada no
+                            endereço plataformajuanbasic-livetv1.com.
+                            Ao acessar este site, consideramos que você está de acordo com os termos e condições abaixo.
+                            Não continue a usar o Plataforma TV1 caso você discorde dos termos e condições descritos
+                            neste contrato.</p>
+                    </div>
+                </div>
+
+                <a class="link-footer" href="#">
+                    <li id="myBtn2">Politica de privacidade</li>
+                </a>
+                <div id="myModal2" class="modal">
+                    <div class="modal-content ">
+                        <button class="close">&times;</button>
+                        <p>Seja bem-vindo ao Plataforma TV1! </p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "cadastro.html";
+        };
+    </script>
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

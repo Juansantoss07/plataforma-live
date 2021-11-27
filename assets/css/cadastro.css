@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(img/pexels-miriam-espacio-2694037.jpg);
+    background-repeat: round;
+}
+main{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.logo{  
+    padding: 1px 5px;
+    height: 6rem;
+}
+main img{
+    width: 110px;
+    height: 100px;
+    padding: 1%;
+}
+.box-login{
+    background-color: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(42px);
+    margin: 7% 0 0 5%;  
+    height: 75%;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+}
+.box-login-upload-file{
+    display: flex;
+    align-items: center;
+}
+.input-file{
+    background-color: white;
+    height: 10%;
+    padding: 20px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.input-file:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.box-login-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.box-login img{
+    display: none;
+}
+.box-login h1{
+    margin: 4rem 0 3% 10%;
+    color: aliceblue;
+}
+input[type=email], [type=password], [type=text]{
+    padding: 2%;;
+    margin: 0 0 2% 10%;
+    border-radius: 10px;
+    border: 0 none;
+    outline: 0;
+    height: 50px;
+    width: 500px;
+}
+input[type=submit]{
+    padding: 2% 5% 2% 5%;
+    margin: 0 0 3% 10%;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0 none;
+    outline: 0;
+    cursor: pointer;
+    background-color: #374997;
+    color: aliceblue;
+    transition: 1.5s;
+    height: 40px;
+    width: 200px;
+}
+input[type=submit]:hover{
+    background-color: #152037;
+    transition: 1.5s;
+}
+input[type=button]{
+    padding: 2% 4%;
+    margin: 0 0.2%;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0 none;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+    transition: 1.5s;
+    color: aliceblue;
+    height: 40px;
+    width: 200px;
+}
+input[type=button]:hover{
+    background-color: rgb(31, 31, 31);
+    transition: 1.5s;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(42px);
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+  }
+  
+  .footer-box{
+    margin: 2% 4% 2% 4%;
+    padding: 2% 0 2% 10%; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .mybtn1, .mybtn2{ 
+    width: 30rem;
+  }
+  .footer-box li{
+    float: left;
+    margin-left: 15rem;
+    list-style: none;
+  }
+  .link-footer{
+    color: aliceblue;
+  }
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    top: -27rem;
+    text-align: center;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: #ffffff;
+    color: black;
+    margin: 0 0 10% 2%; 
+    padding: 8% 8% 8% 8%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%;
+  }   
+  
+  .close {
+    color: rgb(221, 17, 17);
+    margin-bottom: 5%;
+    width: 20%;
+    float: inline-start;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 100px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+@media (max-width: 479px){
+    body{
+        background-repeat: round;
+    }
+    main{
+        height: 100vh;
+    }
+    .logo{
+        padding: 1px 0;
+    }
+    main img{
+        display: none;
+    }
+    .box-login-esqueci-senha{
+        margin: 0;
+    }
+    .box-login-content{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .box-login{
+        height: 100%;
+        margin: 0 0 0 0;
+        padding-right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+        border-radius: 0;
+        backdrop-filter: blur(42px);
+    }
+    .box-login img{
+        display: block;
+        margin-left: 35%;
+    }
+    input[type=email], [type=password], [type=text]{
+    padding: 4% 5% 4% 5%;
+    margin: 0 0 4% 10%;
+    border-radius: 10px;
+    border: 0 none;
+    outline: 0;
+    width: 300px;
+    }
+  .box-login-upload-file{
+      display: flex;
+      justify-content: center;
+  }
+  .input-file{
+      padding-top: 10px;
+      width: 50%;
+      padding-left: 1rem;
+      text-align: center;
+  }
+    
+    input[type=submit]{
+        padding: 4% 10% 4% 10%;
+        margin: 0 0 4% 10%;
+        width: 300px;
+    }
+    input[type=button]{
+        padding: 4% 10% 4% 10%;
+        margin: 0 0 4% 10%;
+        width: 300px;
+    }
+    .box-login a span{
+       margin: 0 0 0 0;
+       padding: 0 10%;
+       color: rgb(20, 98, 167);
+    }
+    .box-login h1{
+        margin: 1% 0 3% 12%;
+    }
+    .footer-box{
+        margin: 2% 0 0 0;
+        padding: 2% 0 0 0; 
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-box li{
+        float: left;
+        margin-left: 0;
+        list-style: none;
+        margin-left: 0;
+    }
+    footer{
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #myBtn2{
+        margin-left: 2rem;
+    }
+    
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 10; 
+        top: -40rem;
+        left: 0;
+        border-radius:0;
+        text-align: center;
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: #ffffff;
+        color: black;
+        margin: 0 0 0 0; 
+        padding: 0;
+        width:99%;
+      }   
+      .modal-content{
+          margin: 0;
+          padding: 5%;
+      }
+}
