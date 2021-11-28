@@ -16,7 +16,9 @@ div.box-menu{
     width: 78px;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease;
 }
+
 div.box-menu-btn{
     margin-top:10px ;
     height: 7%;
@@ -55,13 +57,20 @@ div.icon1, div.icon2, div.icon3{
     margin-bottom: 10px;
 }
 div.icon1:hover, div.icon2:hover, div.icon3:hover{
-    background-color: #454545;
+    background-color:rgb(87, 0, 168);
+    padding: 20px;
+    margin-left: 10px;
 }
 main.live-section{
-    background-color: #454545;
+    background-color: #202020;
     height: 100vh;
     width: 100%;
     padding-left: 78px;
+}
+div.live-section-one{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
 }
 div.live-section-content{
     display: flex;
@@ -71,14 +80,231 @@ div.live-section-content{
 }
 div.video{
     width: 70%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
 }
 div.chat{
     display: flex;
-    width: 30%;
+    width: 28.5%;
+    height: 75vh;
+    position: absolute;
+    right: 0;
+    background-color: blueviolet;
 }
-.arena-chat{
+div.chat-content{
     width: 100%;
-    padding-bottom: 32.5%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
 }
+div.chat-section-one{
+    background-color:#202020;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+#firsth1{
+    color: blueviolet;
+}
+div.chat-section-one p{
+    width: 70%;
+    text-align: center;
+    margin-top: 5rem;
+}
+div.live-box3{
+    background-color: blueviolet;
+    display: flex;
+    width: 29%;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+div.chat-perguntas{
+    width: 100%;
+    height: 10%;
+}
+div.chat-perguntas input[type=text]{
+    height: 100%;
+    width: 100%;
+    border: 0 none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 0 0;
+}
+div.btn-perguntas{
+    height: 10%;
+    width: 100%;
+}
+div.btn-perguntas input[type=submit]{
+    background-color: rgb(118, 0, 228);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid white;
+    outline: 0;
+    color: white;
+    font-weight: 900;
+}
+div.btn-perguntas input[type=submit]:hover{
+    background-color: rgb(87, 0, 168);
+}
+
+div.live-section-apps{
+    background-color: mediumturquoise;
+}
+div.live-section-two{
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+
+}
+div.live-desc{
+    background:#303030;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+div.btns-live{
+    background-color: #303030;
+    color: white;
+    width: 17.6%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 5px;
+    justify-content: center;
+}
+div.btns-live button{
+   background-color: blueviolet;
+   color: white;
+   text-align: center;
+   margin-bottom: 0.5rem;
+   border-radius: 5px;
+   padding: 0.2rem 2rem;
+   cursor: pointer;
+   border: 0 none;
+   outline: 0;
+}
+
+div.live-desc h3{
+    margin-bottom: 0.5rem;
+    color: blueviolet;
+}
+div.live-section-two-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+div.live-section-two input[type="text"]{
+    width: 80%;
+    height: 30%;
+    padding: 0 2rem;
+    border: 0 none;
+    outline: 0;
+    background: #e7e7e7;
+    color: black;
+}
+div.live-section-two input[type="submit"]{
+    width: 20%;
+    height: 30%;
+    cursor: pointer;
+    border: 0 none;
+    background: #016068;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20;
+}
+div.live-section-two input[type="submit"]:hover{
+    background: #01454b ;
+}
+footer{
+    background-color: #303030;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    }
+    
+    .footer-box{
+    margin: 2% 40% 0% 0;
+    padding: 2% 0 2% 10%; 
+    display: flex;
+    flex-direction: row;
+    }
+    .mybtn1, .mybtn2{ 
+    width: 30rem;
+    }
+    .footer-box li{
+    float: left;
+    margin-left: 15rem;
+    list-style: none;
+    }
+    .link-footer{
+    color: aliceblue;
+    }
+    
+    .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    top: -25rem;
+    border-radius: 30px;
+    text-align: center;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: #ffffff;
+    color: black;
+    margin: 0 0 10% 15%; ; 
+    padding: 5% 5% 5% 5%;
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 50%;
+    }
+    #myModal1{
+    position: fixed;
+    top: -30rem;
+    }   
+    #myModal2{
+    margin: 0;
+    position: fixed;
+    top: -30rem;
+    right: 23.5rem;
+    }
+    
+    .close {
+    color: rgb(221, 17, 17);
+    margin-bottom: 5%;
+    width: 20%;
+    float: inline-start;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 100px;
+    }
+    
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
